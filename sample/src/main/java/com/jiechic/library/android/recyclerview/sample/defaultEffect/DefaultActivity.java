@@ -3,10 +3,10 @@ package com.jiechic.library.android.recyclerview.sample.defaultEffect;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import com.jiechic.library.android.recyclerview.sample.R;
+import com.jiechic.library.android.widget.ExtendedRecyclerView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +15,7 @@ import java.util.List;
 public class DefaultActivity extends ActionBarActivity {
     List<String> myDataset = new ArrayList<>();
     @Bind(R.id.recyclerView)
-    RecyclerView recyclerView;
+    ExtendedRecyclerView recyclerView;
 
     DefaultAdapter adapter = new DefaultAdapter(myDataset);
 

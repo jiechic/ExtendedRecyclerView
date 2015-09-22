@@ -379,7 +379,7 @@ public class ExtendedRecyclerView extends FrameLayout {
 
         public MoreViewHolder onCreateLoadMoreItemViewHolder(ViewGroup parent, int viewType)//创建你要的普通item
         {
-            MoreViewHolder holder = new LoadViewHolder(LayoutInflater.from(parent.getContext()).inflate(LoadViewHolder.LAYOUT_ID, parent, false));
+            MoreViewHolder holder = new LoadViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.adapter_loadmore_item, parent, false));
             holder.setLoadListener(viewHolderListener);
             return holder;
         }
@@ -406,7 +406,6 @@ public class ExtendedRecyclerView extends FrameLayout {
 
         public static class LoadViewHolder extends MoreViewHolder {
 
-            public static final int LAYOUT_ID = R.layout.adapter_loadmore_item;
             Button button;
             ProgressBar progressbar;
 
